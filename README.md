@@ -36,6 +36,6 @@ then,
   {menuTitle:"Menu 2"},
   {menuTitle:"Menu 3"}
   ]}
-  onPress={ (index,menuTitle) => alert("cdd" + menuTitle) }
+  onPress={ (index,menuTitle) => alert("Selected: " + menuTitle) }
 />
 ```
