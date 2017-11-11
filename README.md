@@ -1,6 +1,8 @@
 # react-native-mkmenu
 Cross platform modal menu.
 
+<img src="mkmenu.png">
+
 # Installation
 
 ```
@@ -13,6 +15,7 @@ npm i react-native-mkmenu --save
 | Prop     | Type | Default   |
 | :------- | ----: | :---: |
 | modalTitle | string |  Select item   |
+| visible    | boolean   |  false  |
 | data    | object   |    |
 | onPress     | function    |  ```(index,menuTitle) => console.log('Selected: ' + menuTitle)```  |
 
@@ -24,9 +27,10 @@ import MKMenu from 'react-native-mkmenu';
 ```
 then,
 
-```
+```javascript
 <MKMenu
   modalTitle={"Plase select item"}
+  visible={true}
   data={[
   {menuTitle:"Menu 1",menuIcon:<Icon name={'bug'} size={64} color="#5349fc"/>},
   {menuTitle:"Menu 2"},
